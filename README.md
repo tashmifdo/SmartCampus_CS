@@ -160,8 +160,6 @@ curl -i -X DELETE http://localhost:8080/api/v1/rooms/R2
 
 ## Coursework report Answers with questions
 
-<!-- ===================== -->
-<!--       
 PART 1: Service Architecture & Setup. 
 Question 1:
 In your report, explain the default life cycle of a JAX-RS Resource class. Is a new instance instantiated for every incoming request, or does the runtime treat it as a singleton? Elaborate on how this architectural decision impacts the way you manage and synchronize your in-memory data structures (maps/lists) to prevent data loss or race conditions.
@@ -265,5 +263,3 @@ Key advantages are:
 •	Separation of concerns: Resource classes stay focused on business logic, improving readability and testability.
 •	Easier compliance and observability: Centralized logging supports monitoring, auditing, and incident investigation.
 The filter records the incoming method and URL, then records the response status for every request. This keeps the resource classes focused on business logic, avoids duplicated logging code, and ensures that new endpoints are covered automatically. It also makes the logging behavior consistent across the whole API.
-       -->
-<!-- ===================== -->
